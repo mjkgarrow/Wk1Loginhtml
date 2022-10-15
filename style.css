@@ -1,0 +1,44 @@
+body {
+  background-color: #bac6b9;
+  font: 1em sans-serif;
+  font-weight: lighter;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: lime; /* Just to visualize the extent */
+  
+}
+
+.container {
+  display: flex;
+}
+
+.centre {
+  text-align: center;
+}
+
+section {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  flex: 0 0 65%;
+  background-color: #fafcf8;
+}
+
+.right {
+  flex: 1;
+  background-color: #bac6b9;
+}
+
+.loginForm {
+  text-align: center;
+  align-items: center;
+}
