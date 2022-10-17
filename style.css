@@ -1,3 +1,11 @@
+/* 
+Dark green - #bac6b9
+Light green - #fafcf8
+Button green - #466443
+Text blue - #01373e
+Text green - #6a7c69 
+*/
+
 body {
   background-color: #bac6b9;
   font: 1em sans-serif;
@@ -16,27 +24,60 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
 
 section {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
   width: 50%;
   height: 100%;
 }
 
+.logowelcome {
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:#01373e;
+}
+nav>span{
+  padding-left: 5px;
+}
+
+.loginForm {
+  margin-top: 50%;
+  height: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+.ballimage {
+  /* max-width:100%; */
+  max-height: fit-content;
+}
+
 .left {
-  flex: 0 0 65%;
+  flex: auto;
   background-color: #fafcf8;
 }
 
 .right {
-  flex: 1;
+  flex: auto;
   background-color: #bac6b9;
 }
 
-.loginForm {
-  text-align: center;
-  align-items: center;
+footer {
+  margin-top: auto;
+  margin-right: 0%;
 }
