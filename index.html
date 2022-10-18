@@ -10,35 +10,45 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
+    <!-- Left -->
     <section class="left">
+      <!-- Logo -->
       <nav>
         <img class="logo" src="./logo.jpg" alt="logo image">
-        <span>Untitled UI</span>
+        <span class="logoname">Untitled UI</span>
       </nav>
-      <div>
-        <h1>Welcome back</h1>
-        <p>Please enter your details</p>
-      </div>
+
+      <!-- Form -->
       <form class="loginForm" action="">
-        <label>Email</label><br>
-        <input type="email">
+        <h1 class="welcome">Welcome back</h1>
+        <p class="details">Please enter your details</p>
+        <label class="emaillabel">Email</label><br>
+        <input class="emailinput" type="email">
         <br>
-        <label>Password</label><br>
+        <label class="passinput" class="passlabel">Password</label><br>
         <input type="password">
         <br>
-        <input type="checkbox">
-        <label>Remember for 30 days</label>
-        <a href="/">Forgot password</a>
+        <input class="checkinput" type="checkbox">
+        <label class="rememberlabel">Remember for 30 days</label>
+        <a class="forgetlink" href="/">Forgot password</a>
         <br>
-        <input type="submit" value="Sign in">
-        <p>Don't have an account?<a href="/">Sign up</a></p>
+        <input class="submitbutton" type="submit" value="Sign in">
+        <p>Don't have an account?<a class="signuplink" href="/">Sign up</a></p>
       </form>
-      <footer>@CoderAcademy Guru 2022</footer>
+
+      
+      <!-- Footer -->
+      <footer>
+        @CoderAcademy Guru 2022
+      </footer>
+
     </section>
+
+    <!-- Right -->
     <section class="right">
-      <img class="ballimage" src="./ball.png" alt="ball and track image">
+      <!-- <img class="ballimage" src="./ball.png" alt="ball and track image"> -->
     </section>
-  </div>
+  </main>
 </body>
 </html>

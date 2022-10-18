@@ -7,19 +7,10 @@ Text green - #6a7c69
 */
 
 body {
-  background-color: #bac6b9;
+  background-color: #fafcf8;
   font: 1em sans-serif;
   font-weight: lighter;
-}
-
-.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
-  background: lime; /* Just to visualize the extent */
+  color:#01373e;
 }
 
 .container {
@@ -29,55 +20,92 @@ body {
   height: 100vh;
 }
 
+@media screen and (max-width: 600px){
+
+}
 section {
-  display: flex;
-  flex-direction: row;
   width: 50%;
-  height: 100%;
+  height: 95%;
 }
 
-.logowelcome {
-
-}
-
-nav {
+/* Left section */
+.left {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Logo image and name */
+nav {
+  height: 10%;
+  padding-left: 10px;
+  display: flex;
   align-items: center;
   font-weight: bold;
   color:#01373e;
+  width: 100%;
 }
-nav>span{
+.logoname {
   padding-left: 5px;
 }
 
-.loginForm {
-  margin-top: 50%;
-  height: fit-content;
-  padding: 10px;
-  border: 1px solid black;
+
+/* Login box */
+.loginForm{
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8em;
+}
+
+.welcome {
+  font-size: 2.3em;
+  align-self: center;
+  margin: 0;
+
+}
+.details {
+  margin-top: 2%;
+  margin-bottom: 10%;
+  align-self: center;
+  font-weight: lighter;
+
 }
 
 label {
-  margin-bottom: 10px;
+  margin: 6% 0 2% 0;
 }
 
+input {
+  border: 2px solid #bac6b9;
+  border-radius: 2%;
+}
+
+.checkinput {
+  align-self: flex-start;
+  margin: 4% ;
+}
+
+.rememberlabel {
+
+}
+.forgetlink {
+
+}
+.submitbutton {
+
+}
+
+
+
+
+/* Left side */
 .ballimage {
   /* max-width:100%; */
   max-height: fit-content;
 }
 
-.left {
-  flex: auto;
-  background-color: #fafcf8;
-}
-
-.right {
-  flex: auto;
-  background-color: #bac6b9;
-}
-
 footer {
-  margin-top: auto;
-  margin-right: 0%;
+  border: 1px solid black
 }
