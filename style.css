@@ -1,16 +1,16 @@
-/* 
-Dark green - #bac6b9
-Light green - #fafcf8
-Button green - #466443
-Text blue - #01373e
-Text green - #6a7c69 
-*/
+:root {
+  --background: #fafcf8;
+  --text: #01373e;
+  --links: #6a7c69;
+  --buttons: #466443;
+  --borders: #ddd;
+}
 
 body {
-  background-color: #fafcf8;
+  background-color: var(--right);
   font: 1em sans-serif;
   font-weight: lighter;
-  color:#01373e;
+  color: var(--text);
 }
 
 .container {
@@ -20,9 +20,46 @@ body {
   height: 100vh;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 940px){
+  .left {
+    width: 95%;
+    height: 95%;
+  }
+  .ballimage {
+    display: none; 
+  }
 
+  .logoname {
+    display: none; 
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .left img {
+    width: 80px;
+  }
+
+  nav {
+    display: none !important;
+    position:absolute;
+    translate: 38% 120%;
+  }
+
+  .logo2 {
+    visibility: visible !important;
+    margin-top: 40px;
+  }
+
+  .loginForm {
+    translate: 0 -25%;
+  }
 }
+
 section {
   width: 50%;
   height: 95%;
@@ -44,16 +81,21 @@ nav {
   display: flex;
   align-items: center;
   font-weight: bold;
-  color:#01373e;
+  color: var(--text);
   width: 100%;
 }
 .logoname {
   padding-left: 5px;
 }
 
+.logo2 {
+  visibility: hidden;
+}
 
+ 
 /* Login box */
 .loginForm{
+  width: 300px;
   display: flex;
   flex-flow: column;
   font-size: 0.8em;
@@ -78,34 +120,64 @@ label {
 }
 
 input {
-  border: 2px solid #bac6b9;
-  border-radius: 2%;
+  padding: 2%;
+  border: 2px solid var(--borders);
+  border-radius: 5px;
+  background: #fafcf8;
 }
 
+.checkboxforgot{
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
 .checkinput {
-  align-self: flex-start;
-  margin: 4% ;
+  padding: 0%;
+  margin: 0%;
 }
-
-.rememberlabel {
-
+.checklabel {
+  margin: 3px 0 0 5px;
 }
 .forgetlink {
-
+  margin: 3px 0 0 0px;
+  padding-left: 53px;
+  color: var(--links);
+  text-decoration: none;
 }
+
+
+
+
+
 .submitbutton {
+  background-color: var(--buttons);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--background);
+}
+
+.signuplink {
+  color: var(--links);
+  text-decoration: none;
+}
+
+.signup {
+  margin-top: 30px;
+  align-self: center;
 
 }
 
+/* Right side */
+.right {
+  /* flex-flow: column wrap; */
+}
 
-
-
-/* Left side */
 .ballimage {
   /* max-width:100%; */
-  max-height: fit-content;
+
 }
 
 footer {
-  border: 1px solid black
+  font-size: 0.8em;
 }

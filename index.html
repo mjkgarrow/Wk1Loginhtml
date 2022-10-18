@@ -18,23 +18,26 @@
         <img class="logo" src="./logo.jpg" alt="logo image">
         <span class="logoname">Untitled UI</span>
       </nav>
+      <img class="logo2" src="./logo.jpg" alt="logo image">
 
       <!-- Form -->
       <form class="loginForm" action="">
         <h1 class="welcome">Welcome back</h1>
         <p class="details">Please enter your details</p>
         <label class="emaillabel">Email</label><br>
-        <input class="emailinput" type="email">
+        <input class="emailinput" type="email" placeholder="Enter your email">
         <br>
-        <label class="passinput" class="passlabel">Password</label><br>
-        <input type="password">
+        <label class="passlabel">Password</label><br>
+        <input class="passinput" type="password" value="1234567">
         <br>
-        <input class="checkinput" type="checkbox">
-        <label class="rememberlabel">Remember for 30 days</label>
-        <a class="forgetlink" href="/">Forgot password</a>
+        <div class="checkboxforgot">
+          <input class="checkinput" type="checkbox" id="check">
+          <label for="check" class="checklabel">Remember for 30 days</label>
+          <a class="forgetlink" href="/">Forgot password</a>
+        </div>
         <br>
         <input class="submitbutton" type="submit" value="Sign in">
-        <p>Don't have an account?<a class="signuplink" href="/">Sign up</a></p>
+        <p class="signup">Don't have an account? <a class="signuplink" href="/">Sign up</a></p>
       </form>
 
       
@@ -46,9 +49,9 @@
     </section>
 
     <!-- Right -->
-    <section class="right">
-      <!-- <img class="ballimage" src="./ball.png" alt="ball and track image"> -->
-    </section>
+    <img class="ballimage" src="./ball.png" alt="ball and track image">
+    <!-- <section class="right">
+    </section> -->
   </main>
 </body>
 </html>
